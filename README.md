@@ -11,7 +11,8 @@ It was republished by @Jason_TAC on twitter on 2018-04-11:
 https://twitter.com/dosnostalgic/status/984236075945222146
 (with help from @dosnostalgic)
 
-This code has no licensed attached. Make of that what you will. 
+This code has no official licensed attached, but the original developer said "do whatever you like with it"
+(See https://twitter.com/TideGear/status/984514063387344896)
 
 Compilation
 ===========
