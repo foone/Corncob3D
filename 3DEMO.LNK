@@ -1,0 +1,8 @@
+c:\sa\lib\starts 3 defobjs strtexp f3dvec hline dline kline +
+hgcpixad hgcline+
+egaline inst mat+
+clip sin csqrt atn dsqrt cmdline map 3sound
+3demo /MAP
+
+c:\sa\lib\sas.lib
+

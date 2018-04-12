@@ -1,0 +1,7 @@
+starts 3_r f3dvec_r hline defobj_r kline +
+egaline strtxp_r inst mat+
+sin csqrt atn dsqrt cmdliner map_r adl pict
+3 /MAP
+
+sas.lib
+
