@@ -476,7 +476,7 @@ jl449:
 	jmp	bbyte		; do we need another biggie?
 jl451:
 
-sbyte:
+xxsbyte:
 	mov	ax,-1	; get mask
 	shr	ax,cl		; shift in proper direction
 	add	cl,nsml		; add to position
@@ -588,7 +588,7 @@ sskp3:	dec	bx
 jl552:
 	add	si,bp	; add a positive value
 	jns	jl558
-	jmp	sbyte		; do we need another biggie?
+	jmp	xxsbyte		; do we need another biggie?
 jl558:
 	jmp	bbyte
 

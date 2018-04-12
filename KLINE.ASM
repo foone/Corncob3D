@@ -193,7 +193,7 @@ skp3:	dec	bx
 	add	si,dx	; add a negative value
 	jns	bbyte		; do we need another biggie?
 
-sbyte:
+xxsbyte:
 	mov	ax,smlbits	; get mask
 	shr	ax,cl		; shift in proper direction
 	add	cl,nsml		; add to position
@@ -212,7 +212,7 @@ sskp3:	dec	bx
 	jz	ldone
 	add	si,bp	; add a positive value
 	jns	bbyte		; do we need another biggie?
-	jmp	sbyte
+	jmp	xxsbyte
 
 ldone:	
 	mov	dx,3ceh		; dx := graphics controller port addr

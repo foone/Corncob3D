@@ -1,5 +1,4 @@
 
-
 avgthrot	equ	1
 
 jdiag		equ	1
@@ -19,7 +18,7 @@ simpflag	equ	1
 chopchop	equ	0
 sofsrc		equ	1
 userflag	equ	0
-
+						       \
 
 IF shareflag EQ 0
 newthtflag	equ	0
@@ -1513,14 +1512,14 @@ setkbit	proc	near			; sets key bit as pressed bit in DL
 	shr	al,1			; get byte offset of word
 	mov	bl,al
 	xor	bh,bh
-	mov	al,[bx+offset kbdtbl] 	; get byte of keyboard info
+	mov	al,byte ptr [bx+offset @dataseg:kbdtbl]	; get byte of keyboard info
 ;	or	cl,cl			; is cl zero?
 ;	jz	noshft
 	rol	al,cl
 	and	al,0feh			; clear the bit
 	or	al,dl			; set the bit
 	ror	al,cl			; set back to the proper bit
-	mov	[bx+offset kbdtbl],al
+	mov	byte ptr [bx+offset @dataseg:kbdtbl],al
 	ret
 setkbit	endp
 
@@ -1532,7 +1531,7 @@ getkbit	proc	near			; sets key bit as pressed bit in DL
 	shr	al,1			; get byte offset of word
 	mov	bl,al
 	xor	bh,bh
-	mov	al,[bx+offset kbdtbl] 	; get byte of keyboard info
+	mov	al,byte ptr [bx+offset @dataseg:kbdtbl]	; get byte of keyboard info
 ;	or	cl,cl			; is cl zero?
 ;	jz	noshft
 	rol	al,cl
