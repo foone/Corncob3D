@@ -12,3 +12,10 @@ https://twitter.com/dosnostalgic/status/984236075945222146
 (with help from @dosnostalgic)
 
 This code has no licensed attached. Make of that what you will. 
+
+Compilation
+===========
+
+It can be compiled with MASM 6.0b after I've made minor changes.
+It needs Spontaneous Assembly libraries, I believe. 
+I'm currently waiting on those to arrive from eBay. 
